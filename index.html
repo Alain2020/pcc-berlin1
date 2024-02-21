@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCC Berlin</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+<nav class="navbar">
+    <div class="container">
+        <h1 class="logo">PCC Berlin</h1>
+        <button class="navbar-toggler">&#9776;</button> <!-- Navbar toggle button -->
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </div>
+</nav>
+
+    <!-- Home Header -->
+<header id="home" class="hero">
+    <div class="hero-image"></div> <!-- This div will hold the background image -->
+    <div class="container">
+        <h1>Welcome to PCC Berlin</h1>
+        <h3>Presbyterian Church in Cameroon, Berlin-Branch</h3>
+    </div>
+</header>
+
+ <!-- Home Header -->
+
+<section class="about-section">
+    <div class="about-message">
+        <h2>About Us</h2>
+        <p>
+            <strong>Presbyterian Church in Berlin</strong><br>
+            Founded in 2015, the Presbyterian Church in Berlin serves as a vibrant community for worshippers seeking spiritual growth and fellowship. Over the years, it has evolved into a center of faith and outreach, embracing diversity and fostering unity among its members.
+        </p>
+        <p>
+            <strong>General History of the Presbyterian Church</strong><br>
+            The Presbyterian Church in Cameroon (PCC) is a prominent Reformed and Presbyterian denomination in the country. Established by the Basel Mission in 1886, it grew to become the largest English-speaking church in Cameroon, contributing significantly to religious, health, and educational services nationwide.
+        </p>
+        <p>
+            Originating from the Basel Mission's endeavors, the PCC expanded its reach across Southern Cameroon, establishing mission stations and translating scriptures into local languages by the late 19th century. It gained autonomy in 1957, continuing its mission to spread the Christian faith and provide essential services to communities across Cameroon.
+        </p>
+    </div>
+    <div class="moderator">
+        <p class="moderator-label">Moderator</p>
+        <div class="moderator-image">
+            <img src="./assets/images/Moderator.jpg" alt="Current Moderator">
+        </div>
+        <div class="moderator-name">
+            <p>Rt. Rev. Fonki Samuel Forba</p>
+        </div>
+    </div>
+</section>
+
+
+
+
+    <!-- Service Section -->
+    <section id="service" class="service-section">
+        <div class="container">
+            <h2>Service Time</h2>
+            <p>Every Sunday 13:00h to 15:00h</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <!-- We'll add the gallery section later -->
+
+    <!-- Events Section -->
+    <!-- We'll add the events section later -->
+
+    <!-- Blog Section -->
+    <!-- We'll add the blog section later -->
+
+    <!-- Contact Us Section -->
+    <!-- We'll add the contact us section later -->
+
+   <!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="contact-box">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Your Name">
+                <input type="tel" name="phone" placeholder="Your Phone">
+                <input type="email" name="email" placeholder="Your Email">
+                <textarea name="message" placeholder="Your Message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        <div class="address">
+            <h2>Address</h2>
+            <p>Berlin Mitte, Oelnsitzer Str. 10, 12627 Berlin</p>
+        </div>
+    </div>
+</footer>
+
+
+
+<script src="script.js"></script>
+<!-- Add this script before the closing </body> tag -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const navbarToggler = document.querySelector('.navbar-toggler');
+        const navLinks = document.querySelector('.nav-links');
+
+        navbarToggler.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+        });
+    });
+</script>
+</body>
