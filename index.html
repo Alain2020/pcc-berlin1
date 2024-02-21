@@ -11,7 +11,7 @@
 <nav class="navbar">
     <div class="container">
         <h1 class="logo">PCC Berlin</h1>
-        <button class="navbar-toggler">&#9776;</button> <!-- Navbar toggle button -->
+        <button class="navbar-toggler">&#9776;</button>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Us</a></li>
@@ -21,17 +21,21 @@
             <li><a href="#blog">Blog</a></li>
             <li><a href="#contact">Contact Us</a></li>
         </ul>
+        <a href="#donate" class="donate-btn">Donate</a>
     </div>
 </nav>
 
-    <!-- Home Header -->
+
+ <!-- Home Header -->
 <header id="home" class="hero">
     <div class="hero-image"></div> <!-- This div will hold the background image -->
     <div class="container">
         <h1>Welcome to PCC Berlin</h1>
         <h3>Presbyterian Church in Cameroon, Berlin-Branch</h3>
+        <p class="bible-verse">Loading verse...</p>
     </div>
 </header>
+
 
  <!-- Home Header -->
 
@@ -107,15 +111,5 @@
 
 
 <script src="script.js"></script>
-<!-- Add this script before the closing </body> tag -->
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const navbarToggler = document.querySelector('.navbar-toggler');
-        const navLinks = document.querySelector('.nav-links');
-
-        navbarToggler.addEventListener('click', function() {
-            navLinks.classList.toggle('active');
-        });
-    });
-</script>
 </body>
+</html>

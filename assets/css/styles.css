@@ -81,26 +81,58 @@
     }
 }
 
+/* Donate Styles */
+.donate-btn {
+    background-color: #007bff; /* Blue color */
+    color: #fff; /* White text color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.donate-btn:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
+}
+
+
 
 /* Styles for Header */
 .hero {
-    min-height: 100vh;
-    width: 100%;
+    min-height: calc(100vh - 80px); /* Adjust the height based on your navbar height */
     background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('../images/church1a.jpg');
     background-size: cover;
     background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    position: relative;
+}
+
+.hero .container {
+    max-width: 600px; /* Adjust the maximum width of the content */
+    padding: 0 20px; /* Adjust the padding as needed */
 }
 
 .hero h1 {
     font-size: 36px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    color: #ffffff; /* White color */
 }
 
 .hero h3 {
     font-size: 24px;
+    margin-bottom: 20px;
+    color: #ffffff; /* White color */
 }
+
+.hero .bible-verse {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ffffff; /* White color */
+}
+
+/* CSS for the Bible verse */
 
 
 /* Styles for Sections */
@@ -109,6 +141,11 @@
     margin: 0 auto;
     padding: 0 20px;
 }
+
+.container {
+    padding-top: 50px; /* Adjust the value as needed to create the desired space */
+}
+
 
 /* About for Sections */
 .about-section {
