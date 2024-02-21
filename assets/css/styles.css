@@ -95,8 +95,6 @@
     background-color: #0056b3; /* Darker blue color on hover */
 }
 
-
-
 /* Styles for Header */
 .hero {
     min-height: calc(100vh - 80px); /* Adjust the height based on your navbar height */
@@ -195,10 +193,65 @@
     font-weight: bold;
 }
 
-
+/* Service Section Styles */
 .service-section {
     padding: 80px 0;
+    background-color: #f9f9f9; /* Add background color */
 }
+
+.service-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-left {
+    flex: 1;
+    text-align: center;
+}
+
+.service-right {
+    flex: 1;
+    text-align: center;
+}
+
+.digital-clock-container {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.digital-clock {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+}
+
+.service-time {
+    font-size: 18px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.program-list {
+    list-style: none;
+    padding: 0;
+}
+
+.program-list li {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.program-list li:before {
+    content: "\2022"; /* Bullet point character */
+    color: #f39c12; /* Yellow color */
+    margin-right: 10px;
+}
+
+
 
 /* Styles for Footer */
 .footer {
@@ -317,4 +370,3 @@
         width: calc(100% - 20px);
     }
 }
-

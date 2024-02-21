@@ -1,3 +1,5 @@
+console.log('Script loaded successfully!');
+
 // JavaScript for Navbar Toggle
 const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
@@ -29,3 +31,19 @@ function displayRandomVerse() {
 document.addEventListener('DOMContentLoaded', function() {
     displayRandomVerse();
 });
+
+// JavaScript for digital clock
+function updateClock() {
+    const now = new Date();
+    const hours = now.getHours().toString().padStart(2, '0');
+    const minutes = now.getMinutes().toString().padStart(2, '0');
+    const seconds = now.getSeconds().toString().padStart(2, '0');
+    const timeString = `${hours}:${minutes}:${seconds}`;
+    document.getElementById('digital-clock').textContent = timeString;
+}
+
+// Update the clock every second
+setInterval(updateClock, 1000);
+
+// Initial call to display the clock immediately
+updateClock();
