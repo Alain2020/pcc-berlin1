@@ -146,54 +146,53 @@
     padding-top: 50px; /* Adjust the value as needed to create the desired space */
 }
 
-
-/* About for Sections */
+/* About Section */
 .about-section {
+    padding: 50px 0; /* Adjust padding as needed */
+}
+
+.about-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .about-message {
     flex: 1;
-    padding-right: 20px;
+    padding-right: 50px; /* Adjust spacing between text and image */
 }
 
 .moderator {
-    flex: 1;
+    max-width: 30%; /* Adjust width of the moderator section */
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; /* Centers content horizontally */
+    text-align: center; /* Centers text within the div */
 }
 
-.moderator-name p {
-    font-size: 18px;
-    color: #333;
-    margin-top: 10px;
-}
-
-.about-message h2 {
-    font-size: 24px;
-    color: #333;
-}
-
-.about-message p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #555;
-}
-
-.moderator-label {
-    font-weight: bold;
-    color: #000;
-    margin-bottom: 5px;
+.moderator-image {
+    position: relative;
 }
 
 .moderator-image img {
-    max-width: 300px; /* Adjust the maximum width as needed */
-    height: auto;
-    border-radius: 50px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ensure the image fills its container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Add border-radius for rounded corners if desired */
+}
+
+.moderator-label {
+    position: absolute;
+    top: -40px; /* Adjust the top position as needed */
+    left: 50%; /* Adjust the left position as needed */
+    transform: translateX(-50%); /* Center horizontally */
+    font-weight: bold;
+    color: black;
+}
+
+.moderator-name-text {
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
 }
 
 
